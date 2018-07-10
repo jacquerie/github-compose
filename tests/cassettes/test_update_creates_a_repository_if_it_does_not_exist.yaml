@@ -1,0 +1,259 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Authorization: [Basic dXNlcm5hbWU6cGFzc3dvcmQ=]
+      Connection: [keep-alive]
+      User-Agent: [PyGithub/Python]
+    method: GET
+    uri: https://api.github.com/orgs/foo-org
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA5VTS4/aMBD+Lz6z5AEsEGnVHratetiuKnGo9mJNHBMMjp36AaWI/95xHB67XMot
+        jOebme/BgUhdC0UKstT6QZuaDIioSDHO0nw2mU0HROmK01AiL89f9q+b+f4t/+rhV7uqvsltuf75
+        5+X5+/jHoh4h1BuJjSvnWlskCbRiWAu38uWQ6SbB6Ta5rDG81Zb+NyLp+nEH33Ll7gFGACJXWm/u
+        AXb9QRBrPb8HGAGIbHhTcnMPtEcckvhxxCGtL6Vg9P5Z74HXI2ELDsxH8buizXvPvOWGaeVQ7c4+
+        n5xC8Wn7NMa7Km6ZEa0TOuQHCwoa/i5JCGtB7UmhvJQDUmLWYqfUDCIuvvAGREhOMAksxaSAEn+7
+        FtoavebMWVI443ls6LIgnDb7m+eedExLkZ3lq4UNM9IBJl1KvUNbrn4JhZfh28o18oMsVwm+hJcZ
+        Do5XFBxenafZ7CGdPqTzRT4qJpNinL8hE99Wtz1ZusiyIhsV6TT0uH0bJHu9Ihyq2oFEZgId4bSn
+        gtfpncKdt/VT5cKxEnZDvYUapyOQIWUotQGULNIuhZRImp6UXwPTrR4q3Gys40tQ+nMdXAnehxBK
+        QJcPZ48N51i1LTDcMJ8+Th7z8XyOfTdHL3ETXm1RMFyNhvRf6TFEaAleukix95ObBv8/MVSocoVr
+        TtFnoGhU/oIQ/JwMt9N0CQw54vNvLwxvMLyUKyjxAlIsQVp+/Ac0kTB98wQAAA==
+    headers:
+      access-control-allow-origin: ['*']
+      access-control-expose-headers: ['ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      cache-control: ['private, max-age=60, s-maxage=60']
+      content-encoding: [gzip]
+      content-security-policy: [default-src 'none']
+      content-type: [application/json; charset=utf-8]
+      date: ['Tue, 10 Jul 2018 17:44:48 GMT']
+      etag: [W/"5814df7478ec7d87753cd9ed7cec0933"]
+      last-modified: ['Tue, 10 Jul 2018 11:13:07 GMT']
+      referrer-policy: ['origin-when-cross-origin, strict-origin-when-cross-origin']
+      server: [GitHub.com]
+      status: [200 OK]
+      strict-transport-security: [max-age=31536000; includeSubdomains; preload]
+      vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      x-content-type-options: [nosniff]
+      x-frame-options: [deny]
+      x-github-media-type: [github.v3; format=json]
+      x-github-request-id: ['956A:7DB4:37D4305:7CA25B9:5B44F08F']
+      x-ratelimit-limit: ['5000']
+      x-ratelimit-remaining: ['4996']
+      x-ratelimit-reset: ['1531246235']
+      x-runtime-rack: ['0.061527']
+      x-xss-protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Authorization: [Basic dXNlcm5hbWU6cGFzc3dvcmQ=]
+      Connection: [keep-alive]
+      User-Agent: [PyGithub/Python]
+    method: GET
+    uri: https://api.github.com/repos/foo-org/bar-repo
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA+1YTW/jNhD9K4GvTSx/pUkMLLYF0i5aYBNskcNiLwYl0RY3kqiSlL22kP/eN6Rk
+        yd7ajplrLolE8z0+jmaGM6x6Iu5Nh5PB+Hoyntxc9nIZ8xmN9T7f/7F6TP9Oo093G/b1n2WUP/94
+        uP998/D0ZfNwH33oYTLLOGaGTF0pXkiMzMs0ndXDcymvpFoEnZ/lKueqN616qVyIHNB6DpC05mQ4
+        GN1e3+7LWD8+362/jf4s2dciiT+ly/D7lx+f7/+aPDwtxoCyJTNMzUqVgjExptDTIHCDetRfCJOU
+        Yam5imRueG76kcyCMmgW+7j8MAHJQtU0dvMY2KMrRM3k4KDTQas+MVm6J8Cta2e38+YyTeUK2H21
+        R+gBr0FkYPss8sX5BABVgTQJh6kg/4U2LbQ5S4oFVAH9g5cQhYbpFY/PkVNDIIbc4aUKyHksVxnq
+        SInCCJmfJWsHCCK4HcvFhp1NBKAGngSdJcACAORLONhZSIeogkKJJYvWZAbFIy6WsOn5bHtQkJl1
+        QTH62LEIWVoYPmNxRkE4Z6nmL5c9q8Bgsh24RCS9wqe70R3z7dfDivft24WcX8DvLpAJLshSfSiY
+        S/W8XeporFnbNjHUXY8oTtj6/7EgAxIinvnaj4CAVYC/dRRECEsWSsWMPBXbByTtMFRB95V8wnCW
+        +Um1SDAkUnpayyLBILQu+auc8sAeLYEOGpfPyyx0eeg1jn6A00GhjmktFjnnflbaoqugSY6hYnmU
+        ePI14CpwT/YbsoWfOAICH6Yy9CPAWRRYdBXohLnMb2beeoiOwDtsis/9xRF4y2aU71e0wgi95cJZ
+        Y/BB/ZQ14KCqrZayfFGyhSfdFo1vSWfggm1OVgIHvL6Fg4vqGiXC8g25pyUgbe4YRmx6mq3Ft2z2
+        UD9eJRzaa6cqsLvNMnHqjD1AVWN3/PYtfORv+5z0froIOCKQwFXQJkeXdmtaLwvWebdR1iWva2K/
+        D92Ag+qXgpmE8grWKJjiXjJrbFCFDAVJv9+vEs5skZlx5Rt0DgoOpqIEVZWXsqoBo3DImLEl65yE
+        xShhU8liP/tt0WBy38hLnYN2v2qBNsxPkkV2qTKRcm1k7pnzWniXNJdGzEX0mvr8QKDsMFQftcgj
+        fsnS9BLeZ0Qk4I/od+gToS7jnsZwUAhHn+sK85TDNf0sq7gDV4FrnGJepHLtnyo6eIo7xVG7xzNm
+        UHqPBsPbq8HN1eDuaTSeXv86Hd58w5yyiH+eMxw8De6m4/F0dE1zilInJ2iQ9Go3xRM67Z8b3W2R
+        Ti0zSLVOWsRv7fzp/hVBPT9K4W97ofCKVZb758sRDFQlMuMFDvPeNIfTU0+0wfNg52yOZJnDohhc
+        MYNiECdiO9Sc5w1BwvTMxWJvalRJLRRGCiW/88jo7lgb+J2JK/EsdoBUaGxbJNfstItnQilZX3o4
+        /XWOwvVF3cDJgue1oK5qEfFcb3ftWiHaYWf6zo7tS8znrEzNzFWz8LGMaYO7HHgMVxl2TS073ezU
+        TaXbP3lTsyXKLO4ZvSYiVa5m+t+SwTVsim6muV/sEETTUb/7i+J0Ouxiuu3+++3SybKNGpy2oX6/
+        XaLbwmP3b++3S/VN7ltul3JuVrh16SSibptR57Xhy39I9B/jkRYAAA==
+    headers:
+      access-control-allow-origin: ['*']
+      access-control-expose-headers: ['ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      cache-control: ['private, max-age=60, s-maxage=60']
+      content-encoding: [gzip]
+      content-security-policy: [default-src 'none']
+      content-type: [application/json; charset=utf-8]
+      date: ['Tue, 10 Jul 2018 17:44:48 GMT']
+      etag: [W/"dd6a89b9a80dc70203a339a6208d7669"]
+      last-modified: ['Tue, 10 Jul 2018 09:33:25 GMT']
+      referrer-policy: ['origin-when-cross-origin, strict-origin-when-cross-origin']
+      server: [GitHub.com]
+      status: [200 OK]
+      strict-transport-security: [max-age=31536000; includeSubdomains; preload]
+      vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      x-content-type-options: [nosniff]
+      x-frame-options: [deny]
+      x-github-media-type: [github.v3; format=json]
+      x-github-request-id: ['956A:7DB4:37D431A:7CA25FF:5B44F090']
+      x-ratelimit-limit: ['5000']
+      x-ratelimit-remaining: ['4995']
+      x-ratelimit-reset: ['1531246235']
+      x-runtime-rack: ['0.093534']
+      x-xss-protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: !!python/unicode '{"name": "bar-repo", "description": "Description of the
+      bar repo."}'
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Authorization: [Basic dXNlcm5hbWU6cGFzc3dvcmQ=]
+      Connection: [keep-alive]
+      Content-Length: ['67']
+      Content-Type: [application/json]
+      User-Agent: [PyGithub/Python]
+    method: PATCH
+    uri: https://api.github.com/repos/foo-org/bar-repo
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA+1YwW7jNhD9lcDXJpadOE1iYLEtkHbRAptgixwWezEoiZa4kUSVpOy1hfx735CS
+        JXtrO2auuSQSzff4OJoZzrAeiHgwHU9GV9eTq8nN+aCQMZ/R2ODz/R/Lx+zvLPp0t2Zf/1lExfOP
+        h/vf1w9PX9YP99GHASaznGNmyNSF4qXEyLzKslkzPJfyQqok6P0slwVXg2k9yGQiCkCbOUDSmpPx
+        6PL2+nZXxurx+W717fLPin0t0/hTtgi/f/nx+f6vycNTcgUoWzDD1KxSGRhTY0o9DQI3qC+HiTBp
+        FVaaq0gWhhdmGMk8qIJ2sY+LDxOQJKqhsZvHwA5dKRomBwedDjr1qcmzHQFuXTu7mzeXWSaXwO6q
+        PUAPeAMiA9tnUSSnEwBUB9KkHKaC/BfatNDmJCkWUAf0D15CFBqmVzw+RU4DgRhyh5c6IOexXFWo
+        IyVKI2RxkqwtIIjgdqwQa3YyEYAaeBJ0kgALAJAv4GAnIR2iDkolFixakRkUj7hYwKans+1AQWZW
+        JcXoY88iZGlh+IzFOQXhnGWav5wPrAKDyXbgHJH0Cp/uR3fMN18PK953b2dyfga/O0MmOCNLDaFg
+        LtXzZqmDsWZt28ZQfz2iOGLr/8eCDEiIeOYrPwIC1gH+NlEQISxZKBUz8lhs75G0xVAH/VfyCcNZ
+        7ifVIsGQSulpLYsEg9C64q9yyj17tAQ6aF2+qPLQ5aHXOPoeTgeFOqa1SArO/ay0QddBmxxDxYoo
+        9eRrwXXgnuw3ZImfOAICH2Yy9CPAWRRYdB3olLnMb2beeoiOwFtsis/9xRF4w2aU71e0wgi94cJZ
+        Y/BB/ZS14KBurJaxIqlY4km3QeNb0hmYsPXRSmCP13dwcFFdo0RYvSH3dASkzR3DiE1Ps3X4js0e
+        6oerhH177VUFdrd5Lo6dsXuoGuyW376Fj/xtl5PejxcBBwQSuA665OjSbkPrZcEm77bK+uRNTez3
+        oVtwUP9SMpNSXsEaJVPcS2aDDeqQoSAZDod1ypktMnOufIPOQcHBVJSiqvJSVrdgFA45M7ZknZOw
+        GCVsJlnsZ78NGkzuG3mpc9D+Vy3RhvlJssg+VS4yro0sPHNeB++TFtKIuYheU5/vCZQthvqjFkXE
+        z1mWncP7jIgE/BH9Dn0i1GXc0xgOCuHoc11hnnG4pp9lFXfgOnCNU8zLTK78U0UPT3GnOGr3eMYM
+        Su/L0fj2YnRzMbp7uryaXv86Hd98w5yqjH+eMx49jW+mk8l0cktzykqnR2iQ9Bo3xRM67Z8b3U2R
+        Ti0zSLVOO8Rv3fzp7hVBMz/K4G87ofCKVRa758sBDFSlMuclDvPBtIDTU0+0xvNo62yOZFXAohhc
+        MoNiECdiN9Se5y1ByvTMxeJgalRFLRRGSiW/88jo/lgX+L2JS/EstoBUaGxaJNfsdIvnQinZXHo4
+        /U2OwvVF08DJkheNoL5qEfFCb3btWiHaYW/61o7tS8znrMrMzFWz8LGcaYO7HHgMVzl2TS073ew0
+        TaXbP3lTuyXKLO4ZvSYiVS5n+t+KwTVsim6nuV/sEETTUb/9i+J0Omxj+u3+++3S0bKNGpyuoX6/
+        XaLbwkP3b++3S81N7ltulwpulrh16SWifpvR5LXxy39smDMxkRYAAA==
+    headers:
+      access-control-allow-origin: ['*']
+      access-control-expose-headers: ['ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      cache-control: ['private, max-age=60, s-maxage=60']
+      content-encoding: [gzip]
+      content-security-policy: [default-src 'none']
+      content-type: [application/json; charset=utf-8]
+      date: ['Tue, 10 Jul 2018 17:44:48 GMT']
+      etag: [W/"13280169770d88ed7dc179670a5e2cd0"]
+      referrer-policy: ['origin-when-cross-origin, strict-origin-when-cross-origin']
+      server: [GitHub.com]
+      status: [200 OK]
+      strict-transport-security: [max-age=31536000; includeSubdomains; preload]
+      vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      x-content-type-options: [nosniff]
+      x-frame-options: [deny]
+      x-github-media-type: [github.v3; format=json]
+      x-github-request-id: ['956A:7DB4:37D4333:7CA2635:5B44F090']
+      x-ratelimit-limit: ['5000']
+      x-ratelimit-remaining: ['4994']
+      x-ratelimit-reset: ['1531246235']
+      x-runtime-rack: ['0.157344']
+      x-xss-protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Authorization: [Basic dXNlcm5hbWU6cGFzc3dvcmQ=]
+      Connection: [keep-alive]
+      User-Agent: [PyGithub/Python]
+    method: GET
+    uri: https://api.github.com/repos/foo-org/baz-repo
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAAw3JMQ6AIAwAwK+Yuho6uPEAR79gEBogAUqgsBj/rrfeA5l6N55Aw8myHDyKgw0c
+        25GpiJHI5Rot/R9EateIjiYlrtSUjxLGrSxnnDs2qtxx9STwfutuZdhYAAAA
+    headers:
+      access-control-allow-origin: ['*']
+      access-control-expose-headers: ['ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      content-encoding: [gzip]
+      content-security-policy: [default-src 'none']
+      content-type: [application/json; charset=utf-8]
+      date: ['Tue, 10 Jul 2018 17:44:48 GMT']
+      referrer-policy: ['origin-when-cross-origin, strict-origin-when-cross-origin']
+      server: [GitHub.com]
+      status: [404 Not Found]
+      strict-transport-security: [max-age=31536000; includeSubdomains; preload]
+      x-content-type-options: [nosniff]
+      x-frame-options: [deny]
+      x-github-media-type: [github.v3; format=json]
+      x-github-request-id: ['956A:7DB4:37D4360:7CA2686:5B44F090']
+      x-ratelimit-limit: ['5000']
+      x-ratelimit-remaining: ['4993']
+      x-ratelimit-reset: ['1531246235']
+      x-runtime-rack: ['0.052602']
+      x-xss-protection: [1; mode=block]
+    status: {code: 404, message: Not Found}
+- request:
+    body: !!python/unicode '{"name": "baz-repo", "description": "Description of the
+      baz repo."}'
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Authorization: [Basic dXNlcm5hbWU6cGFzc3dvcmQ=]
+      Connection: [keep-alive]
+      Content-Length: ['67']
+      Content-Type: [application/json]
+      User-Agent: [PyGithub/Python]
+    method: POST
+    uri: https://api.github.com/orgs/foo-org/repos
+  response:
+    body: {string: !!python/unicode '{"id":140468092,"node_id":"MDEwOlJlcG9zaXRvcnkxNDA0NjgwOTI=","name":"baz-repo","full_name":"foo-org/baz-repo","owner":{"login":"foo-org","id":41028587,"node_id":"MDEyOk9yZ2FuaXphdGlvbjQxMDI4NTg3","avatar_url":"https://avatars2.githubusercontent.com/u/41028587?v=4","gravatar_id":"","url":"https://api.github.com/users/foo-org","html_url":"https://github.com/foo-org","followers_url":"https://api.github.com/users/foo-org/followers","following_url":"https://api.github.com/users/foo-org/following{/other_user}","gists_url":"https://api.github.com/users/foo-org/gists{/gist_id}","starred_url":"https://api.github.com/users/foo-org/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/foo-org/subscriptions","organizations_url":"https://api.github.com/users/foo-org/orgs","repos_url":"https://api.github.com/users/foo-org/repos","events_url":"https://api.github.com/users/foo-org/events{/privacy}","received_events_url":"https://api.github.com/users/foo-org/received_events","type":"Organization","site_admin":false},"private":false,"html_url":"https://github.com/foo-org/baz-repo","description":"Description
+        of the baz repo.","fork":false,"url":"https://api.github.com/repos/foo-org/baz-repo","forks_url":"https://api.github.com/repos/foo-org/baz-repo/forks","keys_url":"https://api.github.com/repos/foo-org/baz-repo/keys{/key_id}","collaborators_url":"https://api.github.com/repos/foo-org/baz-repo/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/foo-org/baz-repo/teams","hooks_url":"https://api.github.com/repos/foo-org/baz-repo/hooks","issue_events_url":"https://api.github.com/repos/foo-org/baz-repo/issues/events{/number}","events_url":"https://api.github.com/repos/foo-org/baz-repo/events","assignees_url":"https://api.github.com/repos/foo-org/baz-repo/assignees{/user}","branches_url":"https://api.github.com/repos/foo-org/baz-repo/branches{/branch}","tags_url":"https://api.github.com/repos/foo-org/baz-repo/tags","blobs_url":"https://api.github.com/repos/foo-org/baz-repo/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/foo-org/baz-repo/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/foo-org/baz-repo/git/refs{/sha}","trees_url":"https://api.github.com/repos/foo-org/baz-repo/git/trees{/sha}","statuses_url":"https://api.github.com/repos/foo-org/baz-repo/statuses/{sha}","languages_url":"https://api.github.com/repos/foo-org/baz-repo/languages","stargazers_url":"https://api.github.com/repos/foo-org/baz-repo/stargazers","contributors_url":"https://api.github.com/repos/foo-org/baz-repo/contributors","subscribers_url":"https://api.github.com/repos/foo-org/baz-repo/subscribers","subscription_url":"https://api.github.com/repos/foo-org/baz-repo/subscription","commits_url":"https://api.github.com/repos/foo-org/baz-repo/commits{/sha}","git_commits_url":"https://api.github.com/repos/foo-org/baz-repo/git/commits{/sha}","comments_url":"https://api.github.com/repos/foo-org/baz-repo/comments{/number}","issue_comment_url":"https://api.github.com/repos/foo-org/baz-repo/issues/comments{/number}","contents_url":"https://api.github.com/repos/foo-org/baz-repo/contents/{+path}","compare_url":"https://api.github.com/repos/foo-org/baz-repo/compare/{base}...{head}","merges_url":"https://api.github.com/repos/foo-org/baz-repo/merges","archive_url":"https://api.github.com/repos/foo-org/baz-repo/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/foo-org/baz-repo/downloads","issues_url":"https://api.github.com/repos/foo-org/baz-repo/issues{/number}","pulls_url":"https://api.github.com/repos/foo-org/baz-repo/pulls{/number}","milestones_url":"https://api.github.com/repos/foo-org/baz-repo/milestones{/number}","notifications_url":"https://api.github.com/repos/foo-org/baz-repo/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/foo-org/baz-repo/labels{/name}","releases_url":"https://api.github.com/repos/foo-org/baz-repo/releases{/id}","deployments_url":"https://api.github.com/repos/foo-org/baz-repo/deployments","created_at":"2018-07-10T17:44:49Z","updated_at":"2018-07-10T17:44:49Z","pushed_at":"2018-07-10T17:44:49Z","git_url":"git://github.com/foo-org/baz-repo.git","ssh_url":"git@github.com:foo-org/baz-repo.git","clone_url":"https://github.com/foo-org/baz-repo.git","svn_url":"https://github.com/foo-org/baz-repo","homepage":null,"size":0,"stargazers_count":0,"watchers_count":0,"language":null,"has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":0,"mirror_url":null,"archived":false,"open_issues_count":0,"license":null,"forks":0,"open_issues":0,"watchers":0,"default_branch":"master","permissions":{"admin":true,"push":true,"pull":true},"allow_squash_merge":true,"allow_merge_commit":true,"allow_rebase_merge":true,"organization":{"login":"foo-org","id":41028587,"node_id":"MDEyOk9yZ2FuaXphdGlvbjQxMDI4NTg3","avatar_url":"https://avatars2.githubusercontent.com/u/41028587?v=4","gravatar_id":"","url":"https://api.github.com/users/foo-org","html_url":"https://github.com/foo-org","followers_url":"https://api.github.com/users/foo-org/followers","following_url":"https://api.github.com/users/foo-org/following{/other_user}","gists_url":"https://api.github.com/users/foo-org/gists{/gist_id}","starred_url":"https://api.github.com/users/foo-org/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/foo-org/subscriptions","organizations_url":"https://api.github.com/users/foo-org/orgs","repos_url":"https://api.github.com/users/foo-org/repos","events_url":"https://api.github.com/users/foo-org/events{/privacy}","received_events_url":"https://api.github.com/users/foo-org/received_events","type":"Organization","site_admin":false},"network_count":0,"subscribers_count":1}'}
+    headers:
+      access-control-allow-origin: ['*']
+      access-control-expose-headers: ['ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit,
+          X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+          X-Poll-Interval']
+      cache-control: ['private, max-age=60, s-maxage=60']
+      content-length: ['5777']
+      content-security-policy: [default-src 'none']
+      content-type: [application/json; charset=utf-8]
+      date: ['Tue, 10 Jul 2018 17:44:49 GMT']
+      etag: ['"3c03089d0a1351456dc8ecb68740ad05"']
+      location: ['https://api.github.com/repos/foo-org/baz-repo']
+      referrer-policy: ['origin-when-cross-origin, strict-origin-when-cross-origin']
+      server: [GitHub.com]
+      status: [201 Created]
+      strict-transport-security: [max-age=31536000; includeSubdomains; preload]
+      vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
+      x-content-type-options: [nosniff]
+      x-frame-options: [deny]
+      x-github-media-type: [github.v3; format=json]
+      x-github-request-id: ['956A:7DB4:37D4376:7CA26C7:5B44F090']
+      x-ratelimit-limit: ['5000']
+      x-ratelimit-remaining: ['4992']
+      x-ratelimit-reset: ['1531246235']
+      x-runtime-rack: ['0.838249']
+      x-xss-protection: [1; mode=block]
+    status: {code: 201, message: Created}
+version: 1

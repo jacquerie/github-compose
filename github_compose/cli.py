@@ -8,7 +8,7 @@ import click
 import six
 import yaml
 from dotenv import load_dotenv
-from github import Github
+from github import Github, UnknownObjectException
 
 
 @click.group()
@@ -31,5 +31,8 @@ def update(filename):
     for orgname, org in six.iteritems(config['orgs']):
         organization = github.get_organization(orgname)
         for reponame, repo in six.iteritems(org['repos']):
-            repository = organization.get_repo(reponame)
-            repository.edit(description=repo['description'])
+            try:
+                repository = organization.get_repo(reponame)
+                repository.edit(description=repo['description'])
+            except UnknownObjectException:
+                organization.create_repo(reponame, description=repo['description'])

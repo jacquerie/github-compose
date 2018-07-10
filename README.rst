@@ -52,6 +52,21 @@ Here's an example of such a file:
 
 Running the ``update`` command on this file will update the description of the
 ``bar-repo`` of the ``foo-org`` to be "Description of the bar repo."
+Here's another example:
+
+.. code-block:: yaml
+
+    orgs:
+      foo-org:
+        repos:
+          bar-repo:
+            description: "Description of the bar repo."
+          baz-repo:
+            description: "Description of the baz repo."
+
+Suppose that the ``foo-org`` currently has only the ``bar-repo``: running the
+``update`` command with this file will create an empty ``baz-repo`` whose
+description is "Description of the baz repo."
 
 
 Author
