@@ -16,7 +16,11 @@ setup_requires = [
 ]
 
 install_requires = [
+    'PyGithub~=1.0,>=1.40',
+    'PyYAML~=3.0,>=3.13',
     'click~=6.0,>=6.7',
+    'python-dotenv~=0.0,>=0.8.2',
+    'six~=1.0,>=1.11.0',
 ]
 
 docs_require = []
@@ -24,6 +28,7 @@ docs_require = []
 tests_require = [
     'flake8-future-import~=0.0,>=0.4.4',
     'pytest-cov~=2.0,>=2.5.1',
+    'pytest-vcr~=0.0,>=0.3.0',
     'pytest~=3.0,>=3.2.3',
 ]
 

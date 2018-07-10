@@ -40,6 +40,18 @@ Currently ``github-compose`` implements one subcommand:
 
 This will update the configuration of your repositories on GitHub so that it
 matches what is described in a file called (by default) ``github-compose.yml``.
+Here's an example of such a file:
+
+.. code-block:: yaml
+
+    orgs:
+      foo-org:
+        repos:
+          bar-repo:
+            description: "Description of the bar repo."
+
+Running the ``update`` command on this file will update the description of the
+``bar-repo`` of the ``foo-org`` to be "Description of the bar repo."
 
 
 Author
