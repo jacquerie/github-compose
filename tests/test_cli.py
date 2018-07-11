@@ -14,6 +14,13 @@ orgs:
         description: "Description of the bar repo."
 '''
 
+ONE_ORG_ONE_REPO_WITHOUT_DESCRIPTION = '''\
+orgs:
+  foo-org:
+    repos:
+      bar-repo:
+'''
+
 ONE_ORG_TWO_REPOS = '''\
 orgs:
   foo-org:
@@ -29,6 +36,16 @@ orgs:
 def test_update_uses_the_provided_filename(runner, tmpdir):
     config_fd = tmpdir.join('github-compose.yaml')
     config_fd.write(ONE_ORG_ONE_REPO)
+
+    result = runner.invoke(cli, ['update', '-f', str(config_fd)])
+
+    assert 0 == result.exit_code
+
+
+@pytest.mark.vcr()
+def test_update_does_not_require_a_repository_description(runner, tmpdir):
+    config_fd = tmpdir.join('github-compose.yml')
+    config_fd.write(ONE_ORG_ONE_REPO_WITHOUT_DESCRIPTION)
 
     result = runner.invoke(cli, ['update', '-f', str(config_fd)])
 

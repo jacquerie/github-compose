@@ -33,6 +33,9 @@ def update(filename):
         for reponame, repo in six.iteritems(org['repos']):
             try:
                 repository = organization.get_repo(reponame)
-                repository.edit(description=repo['description'])
             except UnknownObjectException:
-                organization.create_repo(reponame, description=repo['description'])
+                repository = organization.create_repo(reponame)
+
+            if repo:
+                kwargs = {'description': repo.get('description', '')}
+                repository.edit(**kwargs)
