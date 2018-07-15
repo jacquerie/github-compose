@@ -7,14 +7,14 @@ import os
 import click
 import six
 import yaml
-from dotenv import load_dotenv
-from github import Github, UnknownObjectException
+from dotenv import find_dotenv, load_dotenv
+from github3 import GitHub, GitHubError
 
 
 @click.group()
 @click.version_option()
 def cli():
-    load_dotenv()
+    load_dotenv(find_dotenv())
 
 
 @cli.command()
@@ -26,16 +26,16 @@ def update(filename):
 
     github_user = os.getenv('GITHUB_USER')
     github_pass = os.getenv('GITHUB_PASS')
-    github = Github(github_user, github_pass)
+    github = GitHub(github_user, github_pass)
 
     for orgname, org in six.iteritems(config['orgs']):
-        organization = github.get_organization(orgname)
+        organization = github.organization(orgname)
         for reponame, repo in six.iteritems(org['repos']):
             try:
-                repository = organization.get_repo(reponame)
-            except UnknownObjectException:
-                repository = organization.create_repo(reponame)
+                repository = github.repository(orgname, reponame)
+            except GitHubError:
+                repository = organization.create_repository(reponame)
 
             if repo:
                 kwargs = {'description': repo.get('description', '')}
-                repository.edit(**kwargs)
+                repository.edit(reponame, **kwargs)

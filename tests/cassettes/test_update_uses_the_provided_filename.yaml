@@ -2,26 +2,28 @@ interactions:
 - request:
     body: null
     headers:
-      Accept: ['*/*']
+      Accept: [application/vnd.github.v3.full+json]
+      Accept-Charset: [utf-8]
       Accept-Encoding: ['gzip, deflate']
       Authorization: [Basic dXNlcm5hbWU6cGFzc3dvcmQ=]
       Connection: [keep-alive]
-      User-Agent: [PyGithub/Python]
+      Content-Type: [application/json]
+      User-Agent: [github3.py/1.1.0]
     method: GET
     uri: https://api.github.com/orgs/foo-org
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA5VTS4/aMBD+Lz6zJARYIFLVHratetiuKnGo9mJNHCcYHNv1A0oR/73jGBa6XMot
-        jOebme/BgUjdCkVK0mj9oG1LBkTUpJyM8mI+nc8GROma01giz0+f9y+bxf61+BLgp1nVX+W2Wv/4
-        /fz0bfJ92Y4RGqzExpX3xpVZBkYMW+FXoRoy3WU43WWXNZYb7eh/I7K+H3fwLVf+HmACIHKl9eYe
-        YN8fBXEu8HuACYDIjncVt/dAT4hDlj6OOMSESgpG75/1L/B6JGzBg30vfl90xcmz4LhlWnlUu7cv
-        ZOdQfNx+mOBdNXfMCuOFjvnBgoKOpy/sN6D2pFRBygGpMGTpQWoGCZBeeAciRia6A45iRECJP30L
-        NVavOfOOlN4Gnhr6EAiv7f7m+cQ2xaQcvenWChdn5AOMuJR6h35c/RIKL8O3le/kOz2uontJLbMc
-        PK8peLy6yEfzh3z2kC+WxbicTstJ8YpMgqlve0b5Ms/L0bgc9z1+b6JWL1eEY1V7kMhMoBWcnqjg
-        dXqncOdt/Vy5cKyF29DgoMXpCGRIGSptASVLtCshJZKmZ+XXwLTRQ4WbrfO8AaU/tdGVaHpMnwS0
-        93A2t7GcY9UZYLhhMXucPhaTxQL7bo5ucBNe7VAwXI2GnL7yY8xOA0H6RPHkJ7cd/nFSmlDlGtec
-        M89A0aT8BSH4WzL8TtMGGHLE519BWN5hailXUOEFpGxAOn78C2+jnsrsBAAA
+        H4sIAAAAAAAAA5VTS4/aMBD+Lz6zBAIsJNKqPWxb9bBdVeJQ7SWaOE4wOLbrB5Qi/nvHcXjscim3
+        MJ5vZr4HByJUwyXJSa3UgzINGRBekXw6HqWL2WI+IFJVrAgl8vL8Zf+6yfZv6VcPv/Sq+ia25frn
+        n5fn79Mfy2aCUG8ENq6c0zZPEtB82HC38uWQqjbB6Ta5rDFMK1v8NyLp+nEH2zLp7gFGACJXSm3u
+        AXb9QRBrPbsHGAGIbFlbMnMPtEcckvhxxCHal4LT4v5Z74HXI2ELDsxH8buiTXvPvGWGKulQ7c4+
+        n5xC8Wn7NMW7Kmap4dpxFfKDBQkte5ckhGmQe5JLL8SAlJi12CkUhYiLL6wFHpITTAJbYFJA8r9d
+        S6GNWjPqLMmd8Sw2dFngTpn9zXNPOqYlH5/la7gNM0YDTLoQaoe2XP3iEi/Dt5VrxQdZrhJ8CS81
+        DByrCnB4dToaLx5G84dRtkwn+WyWT9M3ZOJ1ddszTpfjWT7J8nQSetxeB8lerwiHqnIgkBlHR1jR
+        U8Hr1E7iztv6qXLhWHG7KbyFBqcjkCJlKJUBlCzSLrkQSLo4Kb8GqrQaStxsrGM1SPW5Ca4E70MI
+        BaDLh7PHhjGsWg0UN2Tzx9ljOs0y7Ls5usZNeLVFwXA1GtJ/jY4hQjV44SLF3k9mWvz/xFDtDHdh
+        zyn7FGQRpb9AODtHw+1UUQNFkvj823PDWkxvwSSUeALJaxCWHf8BxhRU0fQEAAA=
     headers:
       access-control-allow-origin: ['*']
       access-control-expose-headers: ['ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit,
@@ -31,9 +33,9 @@ interactions:
       content-encoding: [gzip]
       content-security-policy: [default-src 'none']
       content-type: [application/json; charset=utf-8]
-      date: ['Tue, 10 Jul 2018 09:33:24 GMT']
-      etag: [W/"3c0b5c1688593bc637cb5e3c66bc03db"]
-      last-modified: ['Tue, 10 Jul 2018 00:13:32 GMT']
+      date: ['Sun, 15 Jul 2018 12:32:42 GMT']
+      etag: [W/"e6e2f12d592260f85187f32c068c01f4"]
+      last-modified: ['Thu, 12 Jul 2018 15:39:23 GMT']
       referrer-policy: ['origin-when-cross-origin, strict-origin-when-cross-origin']
       server: [GitHub.com]
       status: [200 OK]
@@ -41,22 +43,24 @@ interactions:
       vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
       x-content-type-options: [nosniff]
       x-frame-options: [deny]
-      x-github-media-type: [github.v3; format=json]
-      x-github-request-id: ['ADB6:7DB7:9372532:1134BB2A:5B447D64']
+      x-github-media-type: [github.v3; param=full; format=json]
+      x-github-request-id: ['C91E:7DB6:9D9AD36:14134157:5B4B3EEA']
       x-ratelimit-limit: ['5000']
-      x-ratelimit-remaining: ['4950']
-      x-ratelimit-reset: ['1531215261']
-      x-runtime-rack: ['0.065883']
+      x-ratelimit-remaining: ['4976']
+      x-ratelimit-reset: ['1531661126']
+      x-runtime-rack: ['0.076723']
       x-xss-protection: [1; mode=block]
     status: {code: 200, message: OK}
 - request:
     body: null
     headers:
-      Accept: ['*/*']
+      Accept: [application/vnd.github.v3.full+json]
+      Accept-Charset: [utf-8]
       Accept-Encoding: ['gzip, deflate']
       Authorization: [Basic dXNlcm5hbWU6cGFzc3dvcmQ=]
       Connection: [keep-alive]
-      User-Agent: [PyGithub/Python]
+      Content-Type: [application/json]
+      User-Agent: [github3.py/1.1.0]
     method: GET
     uri: https://api.github.com/repos/foo-org/bar-repo
   response:
@@ -78,12 +82,12 @@ interactions:
         PnQDDqpfCmYSyitYo2CKe8mssUEVMhQkg8GgSjizRWbGlW/QOSg4mIoSVFVeyqoGjMIhY8aWrHMS
         FqOETSWL/ey3RYPJfSMvdQ7a/aoF2jA/SRbZpcpEyrWRuWfOa+Fd0lwaMRfRa+rzA4Gyw1B91CKP
         eJ+laR/eZ0Qk4I/od+gToS7jnsZwUAhHn+sK85TDNf0sq7gDV4FrnGJepHLtnyo6eIo7xVG7xzNm
-        UHqPh6Pby+HN5fDuaXw1vf51Orr5hjllEf88ZzR8Gt5NR6Pp+JrmFKVOTtAg6dVuiid02j83utsi
+        UHqPh6Pby+HN5fDuaXw1vf51Orr5hjllEf88Z3T9NBpPr0bT0YjmFKVOTtAg6dVuiid02j83utsi
         nVpmkGqdtIjf2vnT/SuCen6Uwt/2QuEVqyz3z5cjGKhKZMYLHOa9aQ6np55og+fhztkcyTKHRTG4
         YgbFIE7Edqg5zxuChOmZi8Xe1KiSWiiMFEp+55HR3bE28DsTV+JZ7ACp0Ni2SK7ZaRfPhFKyvvRw
         +uscheuLuoGTBc9rQV3VIuK53u7atUK0w870nR3bl5jPWZmamatm4WMZ0wZ3OfAYrjLsmlp2utmp
         m0q3f/KmZkuUWdwzek1EqlzN9L8lg2vYFN1Mc7/YIYimo373F8XpdNjFdNv999ulk2UbNThtQ/1+
-        u0S3hcfu395vl+qb3LfcLuXcrHDr0klE3Tajzmujl/8Ajfb+zpEWAAA=
+        u0S3hcfu395vl+qb3LfcLuXcrHDr0klE3Tajzmujl/8A3ZmLy5EWAAA=
     headers:
       access-control-allow-origin: ['*']
       access-control-expose-headers: ['ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit,
@@ -93,9 +97,9 @@ interactions:
       content-encoding: [gzip]
       content-security-policy: [default-src 'none']
       content-type: [application/json; charset=utf-8]
-      date: ['Tue, 10 Jul 2018 09:33:25 GMT']
-      etag: [W/"3e8b38cb4c0b1a133009acb347c111ce"]
-      last-modified: ['Tue, 10 Jul 2018 09:11:25 GMT']
+      date: ['Sun, 15 Jul 2018 12:32:43 GMT']
+      etag: [W/"5754c92cda2e4cbf0a108314d9157b59"]
+      last-modified: ['Sun, 15 Jul 2018 12:31:11 GMT']
       referrer-policy: ['origin-when-cross-origin, strict-origin-when-cross-origin']
       server: [GitHub.com]
       status: [200 OK]
@@ -103,25 +107,26 @@ interactions:
       vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
       x-content-type-options: [nosniff]
       x-frame-options: [deny]
-      x-github-media-type: [github.v3; format=json]
-      x-github-request-id: ['ADB6:7DB7:9372551:1134BB4C:5B447D64']
+      x-github-media-type: [github.v3; param=full; format=json]
+      x-github-request-id: ['C91E:7DB6:9D9AD43:1413418A:5B4B3EEA']
       x-ratelimit-limit: ['5000']
-      x-ratelimit-remaining: ['4949']
-      x-ratelimit-reset: ['1531215261']
-      x-runtime-rack: ['0.148217']
+      x-ratelimit-remaining: ['4975']
+      x-ratelimit-reset: ['1531661126']
+      x-runtime-rack: ['0.085780']
       x-xss-protection: [1; mode=block]
     status: {code: 200, message: OK}
 - request:
     body: !!python/unicode '{"name": "bar-repo", "description": "Description of the
       bar repo."}'
     headers:
-      Accept: ['*/*']
+      Accept: [application/vnd.github.v3.full+json]
+      Accept-Charset: [utf-8]
       Accept-Encoding: ['gzip, deflate']
       Authorization: [Basic dXNlcm5hbWU6cGFzc3dvcmQ=]
       Connection: [keep-alive]
       Content-Length: ['67']
       Content-Type: [application/json]
-      User-Agent: [PyGithub/Python]
+      User-Agent: [github3.py/1.1.0]
     method: PATCH
     uri: https://api.github.com/repos/foo-org/bar-repo
   response:
@@ -143,12 +148,12 @@ interactions:
         D92Ag+qXgpmE8grWKJjiXjJrbFCFDAVJv9+vEs5skZlx5Rt0DgoOpqIEVZWXsqoBo3DImLEl65yE
         xShhU8liP/tt0WBy38hLnYN2v2qBNsxPkkV2qTKRcm1k7pnzWniXNJdGzEX0mvr8QKDsMFQftcgj
         fsnS9BLeZ0Qk4I/od+gToS7jnsZwUAhHn+sK85TDNf0sq7gDV4FrnGJepHLtnyo6eIo7xVG7xzNm
-        UHqPBsPbq8HN1eDuaTSeXv86Hd58w5yyiH+eMxw8De6m4/F0dE1zilInJ2iQ9Go3xRM67Z8b3W2R
-        Ti0zSLVOWsRv7fzp/hVBPT9K4W97ofCKVZb758sRDFQlMuMFDvPeNIfTU0+0wfNg52yOZJnDohhc
-        MYNiECdiO9Sc5w1BwvTMxWJvalRJLRRGCiW/88jo7lgb+J2JK/EsdoBUaGxbJNfstItnQilZX3o4
-        /XWOwvVF3cDJgue1oK5qEfFcb3ftWiHaYWf6zo7tS8znrEzNzFWz8LGMaYO7HHgMVxl2TS073ezU
-        TaXbP3lTsyXKLO4ZvSYiVa5m+t+SwTVsim6muV/sEETTUb/7i+J0Ouxiuu3+++3SybKNGpy2oX6/
-        XaLbwmP3b++3S/VN7ltul3JuVrh16SSibptR57Xhy39I9B/jkRYAAA==
+        UHqPBsPbq8HN1eDuaTSeXv86Hd58w5yyiH+eM7x+Go6m49F0MqY5RamTEzRIerWb4gmd9s+N7rZI
+        p5YZpFonLeK3dv50/4qgnh+l8Le9UHjFKsv98+UIBqoSmfECh3lvmsPpqSfa4HmwczZHssxhUQyu
+        mEExiBOxHWrO84YgYXrmYrE3NaqkFgojhZLfeWR0d6wN/M7ElXgWO0AqNLYtkmt22sUzoZSsLz2c
+        /jpH4fqibuBkwfNaUFe1iHiut7t2rRDtsDN9Z8f2JeZzVqZm5qpZ+FjGtMFdDjyGqwy7ppadbnbq
+        ptLtn7yp2RJlFveMXhORKlcz/W/J4Bo2RTfT3C92CKLpqN/9RXE6HXYx3Xb//XbpZNlGDU7bUL/f
+        LtFt4bH7t/fbpfom9y23Szk3K9y6dBJRt82o89rw5T8rydY0kRYAAA==
     headers:
       access-control-allow-origin: ['*']
       access-control-expose-headers: ['ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit,
@@ -158,8 +163,8 @@ interactions:
       content-encoding: [gzip]
       content-security-policy: [default-src 'none']
       content-type: [application/json; charset=utf-8]
-      date: ['Tue, 10 Jul 2018 09:33:25 GMT']
-      etag: [W/"dd6a89b9a80dc70203a339a6208d7669"]
+      date: ['Sun, 15 Jul 2018 12:32:43 GMT']
+      etag: [W/"04e4af2278051cab8fc3ea1b7ba281de"]
       referrer-policy: ['origin-when-cross-origin, strict-origin-when-cross-origin']
       server: [GitHub.com]
       status: [200 OK]
@@ -167,12 +172,12 @@ interactions:
       vary: ['Accept, Authorization, Cookie, X-GitHub-OTP']
       x-content-type-options: [nosniff]
       x-frame-options: [deny]
-      x-github-media-type: [github.v3; format=json]
-      x-github-request-id: ['ADB6:7DB7:9372573:1134BB91:5B447D65']
+      x-github-media-type: [github.v3; param=full; format=json]
+      x-github-request-id: ['C91E:7DB6:9D9AD56:141341AB:5B4B3EEB']
       x-ratelimit-limit: ['5000']
-      x-ratelimit-remaining: ['4948']
-      x-ratelimit-reset: ['1531215261']
-      x-runtime-rack: ['0.132401']
+      x-ratelimit-remaining: ['4974']
+      x-ratelimit-reset: ['1531661126']
+      x-runtime-rack: ['0.187207']
       x-xss-protection: [1; mode=block]
     status: {code: 200, message: OK}
 version: 1
