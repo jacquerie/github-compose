@@ -14,7 +14,7 @@ from github3 import GitHub, GitHubError
 @click.group()
 @click.version_option()
 def cli():
-    load_dotenv(find_dotenv())
+    load_dotenv(find_dotenv(usecwd=True))
 
 
 @cli.command()
